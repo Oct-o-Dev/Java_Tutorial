@@ -1,0 +1,154 @@
+super() is there in all of the constructor 
+every class exteend to the object
+like: public classs A extends to Object;
+if we use the this() in the constructor then it will call the un parameterized constructor and then it will call the extends class
+
+// Camel Casting
+
+// class interface - Calc , Runable 
+// veriables andd methods - marks , show();
+// constants like env cons - PIE , URI 
+
+final class cannot be inherited
+make method final to stop overriding also in simple final keywird to make it constant it cannot be changed
+
+ abstract class simply define it and make the class LAO ABSTRACT AND THEN USE IT LATER ON 
+ we also have the inner calss we define the method where we define the object understood
+
+ interface - its basically a class where by default evey method or lass is public abstract
+
+ we have to male a class and then to implement the interface we have to mimplement that abstract 
+ now we have to define all the methods or we have to make that class also thr abstract class 
+
+in interface by default all the variables are final and static sp we have to also deine its value when defining it
+
+if we have to change th area we can't cause it final and static
+
+ca a ckass multiple interface then its YES
+well we can extends the interface of one in another interface
+
+//class - class -> extends;
+// class - inteface -> implements
+// inteface - interface -> extends
+
+ENUMS:
+
+
+Annotations - we have lots of them kindly read the documentation for this it would be much better 
+
+Types of intefaces
+1. Normal - normal one that we use two or more method
+2. Functional/SAM -  if only one method 
+3. Marker - no methods means blank interface , just used to store 
+
+(read serialization and deserialization for the lasat marker storing method usage)
+
+Functional interface - we can only use the lambda expression ith the functional inteface only 
+
+LAMBDA EXPRESSION : ->
+Ex: A obj = () -> 
+            {
+                System.out.println("asdf);
+            }
+
+            we eliminated (new A() 
+            the {
+                pulic noid show(){
+                    Sout("asdf);
+                }
+            })
+More example : A obj = (i , j) -> i + j;
+
+
+Exceptions : 
+1. Compile type  error
+2. Run time error -> exceptions
+3. Logical Error
+
+we handle the exception using the try and catch
+
+Keywords:
+throw : read its usage in documentation 
+
+
+Take input : Scanner sc = new Scanner(System.in)
+             int num = sc.nextInt();
+
+
+Threads : use it for the multiple processing not one byone but simultaneously one y one
+
+Mutations : we can change something like variables or something 
+            (strings are inmutable)
+
+Race Condition: syncronized keyword to use to allow only one thread to word at a same time 
+
+NOw we have lots of states 
+start()
+run()
+sleep()
+wait()
+stop()
+
+
+COLLECTION:
+1. Collection API
+2. COllection interface
+3. Collections (CLass)
+
+LIST API's we have so many of them read the documentations for the simpler explanation for eacch of the following collections we have for it
+ 
+see the use of Stream in he collections
+
+
+LVTI :
+
+Sealed Classes:
+read documentation
+
+Record Classes: 
+
+
+JDBC:
+
+1. Import the packages(java.sql*)
+2. Load and register the drivers 
+    a.Load the drivver
+     (com.mysql.jdbc.driver)
+    mysql.connector
+
+    b. Register the driver(forName("com.mysql.jdbc.driver))
+
+
+3. Establish the connection
+4. create the statemnt (statement -> prepared , collable)
+5. Execute the query 
+6. processing result
+7.Close
+
+
+Ex: 
+import jva,sql.*
+    main()
+    {
+        Class.forName("com.mysql.jdbc.Driver");
+        Connection con = DriverNamager.getConnection("URL" , "User_Name" , "Pass") 
+        Statemnt st = com.CreateStatement();
+        ResultSet rs =   st.ExecuteQuery("SELECT * FROM student")
+
+        while(rs.next()){
+            rs.getInt(1) + " " + rs.getString(2);
+        }
+        
+        st.close();
+        con.close();
+    }
+
+    DDL 
+    DML
+    DQL
+
+    These are in DBMS see the in the docu,entation 
+
+    
+
+
